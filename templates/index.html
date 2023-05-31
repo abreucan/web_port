@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Andrea's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="./static/assets/css/main.css" />
+		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+		<noscript><link rel="stylesheet" href="./static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">About me</a></li>
+							<li><a href="#two">Projects</a></li>
+							<li><a href="#three">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Hi, I'm Andrea</h1>
+							<p>Thanks for visiting!<br />
+							I am a Python developer and on this website I'll share with you some of my projects :)</p>
+							<ul class="actions">
+								<li><a href="#two" class="button scrolly">See projects</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="./static/images/pic01.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Get to know me</h2>
+									<p>In this section you will find some facts about my personal life.</p>
+									<ul class="actions">
+										<li><a href="gettoknow.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="./static/images/pic02.jpg" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Academics</h2>
+									<p>In this section you will find academic related experiences such as career and certifications.</p>
+									<ul class="actions">
+										<li><a href="academics.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="./static/images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Experiences</h2>
+									<p>In this section you will find some jobs and volunteering experiences I have had the opportunity to be part of.</p>
+									<ul class="actions">
+										<li><a href="experiences.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Projects</h2>
+							<p>Here you can find some summaries about the projects I have worked on. In case one of these projects calls your attention, you can check all code details on my <a href="https://github.com/abreucan" target="_blank">GitHub profile</a> just by clicking the title.</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3><a href="https://github.com/abreucan/web_scraping" target=”_blank”>Web Scraping</a></h3>
+									<p>Scraping the website "Hacker News" and filtering all the news that have above 100 points in the first and second page.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-lock"></span>
+									<h3><a href="https://github.com/abreucan/password_checker" target=”_blank”>Password Checker</a></h3>
+									<p>This project lets you check if your password has been hacked (and how many times) in a safe way.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3><a href="https://github.com/abreucan/message_me" target="_blank">Message me</a></h3>
+									<p>This project is about the automation of text messages for business or personal purposes using Twilio. Only verified users can get the text.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+									<h3>Web Page server</h3>
+									<p>This portfolio! I created a server with python to host and direct this webpage I'm using as portfolio. All front-end design is a template from HTML-5.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-link"></span>
+									<h3><a href="https://github.com/abreucan/message_me" target="_blank">Password limit</a></h3>
+									<p>Placing parameter for passwords using Python classes. This allows to make mandatory some condition such as a minimum of characters, symbols, and capitalized letters.</p>
+								</section>
+								<section>
+									<span class="icon major fa-gem"></span>
+									<h3><a href="https://github.com/abreucan/pdf_wtrmrk" target="_blank">PDF watermark</a></h3>
+									<p>Using a PDF document as a watermark to mark any other PDF document; this project is useful when sharing information that is preferred to keep as confidential.</p>
+								</section>
+							</div>
+							<ul class="actions">
+								<li><a href="otherprojects.html" class="button">More projects</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>If you have  any questions or would like a collaboration, please do not hesitate to  contact me! I will try to respond shortly, and hopefully we can create something great together :)</p>
+							<div class="split style1">
+								<section>
+									<form  action="submit_form" method="POST">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Location</h3>
+											<span>Panama City, Panama</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<span>ajabreu@gmail.com</span>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>+507 6615-8599</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="https://github.com/abreucan/portfo" target=”_blank” class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="https://instagram.com/andreabreuc?igshid=OGQ5ZDc2ODk2ZA==" target=”_blank” class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="https://www.linkedin.com/in/andrea-abreu-a13333a2/" target=”_blank” class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy;2023 Andrea Abreu. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="./static/assets/js/jquery.min.js"></script>
+			<script src="./static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="./static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="./static/assets/js/browser.min.js"></script>
+			<script src="./static/assets/js/breakpoints.min.js"></script>
+			<script src="./static/assets/js/util.js"></script>
+			<script src="./static/assets/js/main.js"></script>
+
+	</body>
+</html>
